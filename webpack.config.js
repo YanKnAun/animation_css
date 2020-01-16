@@ -27,11 +27,17 @@ module.exports = {
         })
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.svg$/,
         use: [
-          'file-loader'
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 51200,
+              name: '../images/other/[name].[ext]'
+            }
+          }
         ]
-      }
+      },
     ]
   },
   plugins: [

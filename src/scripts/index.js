@@ -1,6 +1,6 @@
-import "../scss/app.scss";
+import "../scss/style.scss";
 import animation from './lib/animation'
 
-console.log("> Yan");
+console.log("> Animation");
 
 animation()
